@@ -67,7 +67,7 @@ lock_option:
     LOCK [=] {DEFAULT|NONE|SHARED|EXCLUSIVE}
 ```
 
-When you create an index it is stored on the disk in order for the optimizer to quickly being able to retrieve the structure and use it to retrieve the data. In our query example from earlier we have a scenario where the created_at is a timestamp stating when the post is persisted, which means it follows the same sequence as the id which is a primary key. As we know, the primary key in our table is already indexed. So we don't even have to create a new index in this example in order to optimize the above query, we just have to change the **ORDER BY** operation to use the id instead.
+When you create an index it is stored on the disk in order for the optimizer to quickly be able to retrieve the structure and use it to retrieve the data. In our query example from earlier we have a scenario where the created_at is a timestamp stating when the post is persisted, which means it follows the same sequence as the id which is a primary key. As we know, the primary key in our table is already indexed. So we don't even have to create a new index in this example in order to optimize the above query, we just have to change the **ORDER BY** operation to use the id instead.
 ```sql
 SELECT *
 FROM posts AS p
@@ -100,7 +100,7 @@ So now when a query asks for an indexed value it will go into the data structure
 
 ***So why not put indexes on every attribute?***
 
-Don't just add indexes to every attribute just because it will make retrieving data faster, because there a some disadvantages to adding indexes to attributes. It obviously takes up space as you need to create the entire data structure that will hold the index. And as the table grows bigger, more extra space is needed to hold the index. It also make's add, update and delete operations in the database more costly, as now when a tuple is added, updated or deleted, the same operation has to be done on the index data structure. That's why there is a general rule of not indexing something that is not queried frequently.
+Don't just add indexes to every attribute just because it will make retrieving data faster, as there are some disadvantages to adding indexes to attributes. It obviously takes up space as you need to create the entire data structure that will hold the index. And as the table grows bigger, extra space is needed to hold the index. It also make's add, update and delete operations in the database more costly, as now when a tuple is added, updated or deleted, the same operation has to be done on the index data structure. That's why there is a general rule of not indexing something that is not queried frequently.
 
 #### *That's it !!*
 
