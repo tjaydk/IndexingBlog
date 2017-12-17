@@ -106,9 +106,14 @@ Don't just add indexes to every attribute just because it will make retrieving d
 
 From introducing the index in our **ORDER BY** operation we are able to handle HUGE amounts of data and retrieve data extremely fast as we are using the tree structure and therefore we are lowering the cost of the operation to approximately O(log n). We are now ready to approach the world with renewed confidence.
 
+#### Extra reading
+- If interrested in further knowledge of the datastructures presented in this blog or just in general, then we would recommend basically any book by Robert Sedgewick, and his book Algorithms in particular. In addition to algorithms he has a free course on Coursera.org that is really good.
+- If you would like to pursue more knowledge in MariaDB, we would recommod you to start with their documentation. Other than that experience is needed to really improve, so create your own application and learn by doing. 
+
 #### Sources
 - https://mariadb.com/kb/en/library/getting-started-with-indexes/
 - https://mariadb.com/kb/en/library/create-index/
 - https://en.wikipedia.org/wiki/Binary_search_tree
 - https://en.wikipedia.org/wiki/Hash_table
-
+- https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-d-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=032157351X
+- https://www.coursera.org/learn/algorithms-part1
