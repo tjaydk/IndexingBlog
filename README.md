@@ -108,6 +108,7 @@ From introducing the index in our **ORDER BY** operation we are able to handle H
 
 #### Sources
 - https://mariadb.com/kb/en/library/getting-started-with-indexes/
+- https://mariadb.com/kb/en/library/create-index/
 - https://en.wikipedia.org/wiki/Binary_search_tree
 - https://en.wikipedia.org/wiki/Hash_table
 
