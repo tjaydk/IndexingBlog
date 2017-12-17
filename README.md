@@ -104,7 +104,10 @@ Don't just add indexes to every attribute just because it will make retrieving d
 
 #### *That's it !!*
 
-From introducing the index in our **ORDER BY** operation we are able to handle HUGE amounts of data and retrieve data extremely fast as we are using the tree structure and therefore we are lowering the cost of the operation to approximately O(log n) (reference: https://en.wikipedia.org/wiki/Binary_search_tree). We are now ready to approach the world with renewed confidence.
+From introducing the index in our **ORDER BY** operation we are able to handle HUGE amounts of data and retrieve data extremely fast as we are using the tree structure and therefore we are lowering the cost of the operation to approximately O(log n). We are now ready to approach the world with renewed confidence.
 
-
+#### Sources
+- https://mariadb.com/kb/en/library/getting-started-with-indexes/
+- https://en.wikipedia.org/wiki/Binary_search_tree
+- https://en.wikipedia.org/wiki/Hash_table
 
